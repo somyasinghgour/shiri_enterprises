@@ -383,7 +383,14 @@ p {
     }
     .dropdown-menu li a {
         padding: 3px 4px;
-    }        
+    } 
+    @media(max-width: 700px){
+      .dropdown-menu{
+        width: 120px;
+        padding: 10px 20px;
+        display: block;
+      }
+    }       
 
 /*===========================
     3.SLIDER css 
