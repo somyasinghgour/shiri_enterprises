@@ -58,6 +58,22 @@
             width: auto;
         }
     }
+    a span{
+        visibility: hidden;
+    }
+    a span:after{
+        animation: down 1s linear infinite;
+    }
+    @keyframes down{
+        from{
+            top: -10px;
+            opacity: 0;
+        }
+        to{
+            top: 10px;
+            opacity: 1;
+        }
+    }
 </style>
 <body>
    
@@ -119,9 +135,7 @@
                                 <li class="nav-item">
                                     <a data-scroll-nav="0" href="#team">Team</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a data-scroll-nav="0" href="#blog">Blog</a>
-                                </li>
+                                
                                 <li class="nav-item">
                                     <a data-scroll-nav="0" href="#contact">Contact</a>
                                 </li>
@@ -266,13 +280,13 @@
                                     <div class="col-md-4">
                                         <div class="single-product-items">
                                             <div class="product-item-image">
-                                                <a href="bed.html"><img src="assets/images/product/bed1.jpg" alt="Product" class="image"></a>
+                                                <a href="bed.html"><img src="assets/images/product/bt1.png" alt="Product" class="image"></a>
                                                 <!-- <div class="product-discount-tag">
                                                     <p>-60%</p>
                                                 </div> -->
                                             </div>
                                             <div class="product-item-content text-center mt-30">
-                                                <h5 class="product-title"><a href="bed.html">Fibre Chair</a></h5>
+                                                <h5 class="product-title"><a href="bed.html">Medical Bed</a></h5>
                                                 <ul class="rating">
                                                     <li><i class="lni-star-filled"></i></li>
                                                     <li><i class="lni-star-filled"></i></li>
@@ -286,11 +300,11 @@
                                     <div class="col-md-4">
                                         <div class="single-product-items">
                                             <div class="product-item-image">
-                                                <a href="bed.html"><img src="assets/images/product/bed5.jpg" alt="Product" class="image"></a>
+                                                <a href="bed.html"><img src="assets/images/product/bt2.png" alt="Product" class="image"></a>
                                                 
                                             </div>
                                             <div class="product-item-content text-center mt-30">
-                                                <h5 class="product-title"><a href="bed.html">Touchwood Chair</a></h5>
+                                                <h5 class="product-title"><a href="bed.html">Patient Care Bed</a></h5>
                                                 <ul class="rating">
                                                     <li><i class="lni-star-filled"></i></li>
                                                     <li><i class="lni-star-filled"></i></li>
@@ -304,11 +318,11 @@
                                     <div class="col-md-4">
                                         <div class="single-product-items">
                                             <div class="product-item-image">
-                                                <a href="bed.html"><img src="assets/images/product/bed3.jpg" alt="Product" class="image"></a>
+                                                <a href="bed.html"><img src="assets/images/product/bt3.jpg" alt="Product" class="image"></a>
                                                 
                                             </div>
                                             <div class="product-item-content text-center mt-30">
-                                                <h5 class="product-title"><a href="bed.html">Classic Wardrobe</a></h5>
+                                                <h5 class="product-title"><a href="bed.html">Patient Bed</a></h5>
                                                 <ul class="rating">
                                                     <li><i class="lni-star-filled"></i></li>
                                                     <li><i class="lni-star-filled"></i></li>
@@ -326,7 +340,7 @@
                                                 
                                             </div>
                                             <div class="product-item-content text-center mt-30">
-                                                <h5 class="product-title"><a href="trolley.html">Drug Trolley</a></h5>
+                                                <h5 class="product-title"><a href="trolley.html">Instrument Trolley</a></h5>
                                                 <ul class="rating">
                                                     <li><i class="lni-star-filled"></i></li>
                                                     <li><i class="lni-star-filled"></i></li>
@@ -361,7 +375,7 @@
                                                 <a href="trolley.html"><img src="assets/images/product/trolley6.png" alt="Product" class="image"></a>
                                             </div>
                                             <div class="product-item-content text-center mt-30">
-                                                <h5 class="product-title"><a href="trolley.html">Instrument Trolley</a></h5>
+                                                <h5 class="product-title"><a href="trolley.html">Drug Trolley</a></h5>
                                                 <ul class="rating">
                                                     <li><i class="lni-star-filled"></i></li>
                                                     <li><i class="lni-star-filled"></i></li>
@@ -606,7 +620,7 @@
                     <div class="services-left mt-45">
                         <div class="services">
                             <img src="assets/images/product-1.jpg" alt="">
-                            <a href="#" class="main-btn mt-30">Download Brochure <i class="lni-chevron-right"></i></a>
+                            <a href="assets/brochure.pdf" class="main-btn mt-30" download="true">Download Brochure <i class="lni-chevron-right"></i></a>
                         </div> <!-- services btn -->
                     </div> <!-- services left -->
                 </div>
@@ -669,27 +683,24 @@
     
     <section id="showcase" class="showcase-area pt-100 pb-130">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="showcase-title pt-25">
-                        <h2 class="title">Showcase</h2>
-                    </div> <!-- showcase title -->
-                </div> 
-                <div class="col-lg-6">
-                    <div class="showcase-title pt-25">
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo.</p>
-                    </div> <!-- showcase title -->
-                </div>
-            </div> <!-- row -->
+            <div class="showcase-title pt-25">
+                <h2 class="title text-center">What We DO!!</h2>
+            </div> <!-- showcase title -->
+
+            <div class="showcase-title pt-25">
+                <p class="text-justify">We believe in creating Best Hospital Furniture Solutions that especially cater to the necessities of those businesses which appreciate premium craftsmanship and sophistication. Our products are designed whilst keeping a high control and check over quality and precision. Our niche product range has been created for enhanced operations of Hospital, Infrastructure & maintain it in a best way. Shiri Enterprises is an India based company working towards excellence in the Production of all types of hospital furnitures, and believe in pursuing business through innovation and technology. Our team comes with several years of industry experience, and comprise of a highly motivated set of specialists.</p>
+            </div> <!-- showcase title -->
+                
+            
             <div class="row">
                 <div class="col-lg-12">
                     <div class="showcase-active mt-65">
                         <div class="single-showcase">
-                            <img src="assets/images/interior.jpg" alt="Testimonial" style="width: 100%; height: 600px;">
+                            <img src="assets/images/interior.jpg" alt="Testimonial" class="showcase-img">
                             <a href="#" class="main-btn">Full Preview</a>
                         </div> <!-- single showcase -->
                         <div class="single-showcase">
-                            <img src="assets/images/showcase/t-2.jpg" alt="Testimonial">
+                            <img src="assets/images/interior2.jpg" alt="Testimonial" class="showcase-img">
                             <a href="#" class="main-btn">Full Preview</a>
                         </div> <!-- single showcase -->
                     </div> <!-- showcase active -->
@@ -708,7 +719,7 @@
                 <div class="col-lg-6">
                     <div class="section-title text-center pb-25">
                         <h3 class="title mb-15">Our Expert Team</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm od tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p>We Would Stand For Safety, Integrity, Diversity, Powered by Excellence and Serve Our Clients with Honor, Consideration and due Respect.</p>
                     </div> <!-- section title -->
                 </div>
             </div> <!-- row -->
@@ -720,13 +731,13 @@
                              alt="Team">
                         </div>
                         <div class="team-content mt-30">
-                            <h4 class="title mb-10"><a href="#">Celina Gomez</a></h4>
+                            <h4 class="title mb-10"><a href="#">Yogendra Singh Sengar</a></h4>
                             <span>FOUNDER</span>
-                            <ul class="social mt-15">
+                            <!-- <ul class="social mt-15">
                                 <li><a href="#"><i class="lni-facebook-filled"></i></a></li>
                                 <li><a href="#"><i class="lni-twitter-original"></i></a></li>
                                 <li><a href="#"><i class="lni-instagram"></i></a></li>
-                            </ul>
+                            </ul> -->
                         </div>
                     </div> <!-- single temp -->
                 </div>
@@ -737,13 +748,9 @@
                              alt="Team">
                         </div>
                         <div class="team-content mt-30">
-                            <h4 class="title mb-10"><a href="#">Patric Green</a></h4>
+                            <h4 class="title mb-10"><a href="#">Neeraj Gaur</a></h4>
                             <span>Consultant</span>
-                            <ul class="social mt-15">
-                                <li><a href="#"><i class="lni-facebook-filled"></i></a></li>
-                                <li><a href="#"><i class="lni-twitter-original"></i></a></li>
-                                <li><a href="#"><i class="lni-instagram"></i></a></li>
-                            </ul>
+                            
                         </div>
                     </div> <!-- single temp -->
                 </div>
@@ -754,13 +761,9 @@
                              alt="Team">
                         </div>
                         <div class="team-content mt-30">
-                            <h4 class="title mb-10"><a href="#">Mark Parker</a></h4>
+                            <h4 class="title mb-10"><a href="#">Hariom</a></h4>
                             <span>Business Manager</span>
-                            <ul class="social mt-15">
-                                <li><a href="#"><i class="lni-facebook-filled"></i></a></li>
-                                <li><a href="#"><i class="lni-twitter-original"></i></a></li>
-                                <li><a href="#"><i class="lni-instagram"></i></a></li>
-                            </ul>
+                            
                         </div>
                     </div> <!-- single temp -->
                 </div>
@@ -773,11 +776,7 @@
                         <div class="team-content mt-30">
                             <h4 class="title mb-10"><a href="#">Daryl Dixon</a></h4>
                             <span>Marketing Manager</span>
-                            <ul class="social mt-15">
-                                <li><a href="#"><i class="lni-facebook-filled"></i></a></li>
-                                <li><a href="#"><i class="lni-twitter-original"></i></a></li>
-                                <li><a href="#"><i class="lni-instagram"></i></a></li>
-                            </ul>
+                            
                         </div>
                     </div> <!-- single temp -->
                 </div>
@@ -798,15 +797,15 @@
                         <div class="testimonial-active">
                             <div class="single-testimonial">
                                 <i class="lni-quotation"></i>
-                                <p class="mb-30">Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor inc ididunt ut labore et dolore magna aliqua.</p>
-                                <h6 class="title">Roma De Suza</h6>
-                                <span>- CEO, Tesla</span>
+                                <p class="mb-30">They realy maintain the quality and they have really nice hospital products I was very impressed with there products and work what they deliver to us in my hospital.</p>
+                                <h6 class="title">Dr. Manoj Gulati</h6>
+                                <span>- CEO, Parivar Hospital</span>
                             </div> <!-- single testimonial -->
                             <div class="single-testimonial">
                                 <i class="lni-quotation"></i>
-                                <p class="mb-30">Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor inc ididunt ut labore et dolore magna aliqua.</p>
-                                <h6 class="title">Lisa White</h6>
-                                <span>- Designer, Walmart</span>
+                                <p class="mb-30">They have such a great product which they have deliver to my clinic they have wide range of all types of hospital furniture and having there own production.</p>
+                                <h6 class="title">Dr. Vivek jain</h6>
+                                <span>- Neurologist, Gwalior</span>
                             </div> <!-- single testimonial -->
                         </div> <!-- testimonial active -->
                     </div> <!-- testimonial content -->
@@ -846,7 +845,7 @@
                                             <i class="lni-phone-handset"></i>
                                         </div>
                                         <div class="info-content">
-                                            <p>+88 1234 56789</p>
+                                            <p>+91 99972-68800</p>
                                         </div>
                                     </div> <!-- single info -->
                                 </li>
@@ -856,7 +855,7 @@
                                             <i class="lni-envelope"></i>
                                         </div>
                                         <div class="info-content">
-                                            <p>contact@yourmail.com</p>
+                                            <p>contact@shiri.in</p>
                                         </div>
                                     </div> <!-- single info -->
                                 </li>
@@ -866,7 +865,7 @@
                                             <i class="lni-home"></i>
                                         </div>
                                         <div class="info-content">
-                                            <p>203, Envato Labs, Behind Alis Steet,Australia</p>
+                                            <p>19 B, Industrial Estate, Birla Nagar, Gwalior, Madhya Pradesh 474004, India.</p>
                                         </div>
                                     </div> <!-- single info -->
                                 </li>
@@ -921,9 +920,9 @@
                     <div class="col-lg-3 col-md-5 col-sm-7">
                         <div class="footer-logo mt-40">
                             <a href="#">
-                                <img src="assets/images/logo.png" alt="Logo">
+                                <img src="assets/images/logo.png" alt="Logo" width="140" height="90">
                             </a>
-                            <p class="mt-10">Gravida nibh vel velit auctor aliquetn quibibendum auci elit cons equat ipsutis sem nibh id elit.</p>
+                            <p class="mt-10">Shiri Enterprises deals with a wide range of all types of hospital furniture, we deliver the best in quality & we deal with integrity in the market to make the hospital look like best with our furniture in which the patients get in care with full specific facilities.</p>
                             <ul class="footer-social mt-25">
                                 <li><a href="#"><i class="lni-facebook-filled"></i></a></li>
                                 <li><a href="#"><i class="lni-twitter-original"></i></a></li>
@@ -942,15 +941,17 @@
                                         <li><a href="stretcher.html">Stretcher</a></li>
                                         <li><a href="table.html">Table</a></li>
                                         <li><a href="wardscreen.html">Ward Screen</a></li>
+                                        <li><a href="salinestand.html">Saline Stand</a></li>
+
                                     </ul> 
                                 </div>
                                 <div class="col-md-6">
                                    <ul>
-                                        <li><a href="salinestand.html"></a>Saline Stand</li>
-                                        <li><a href="stool.html"></a>Stools and Chairs</li>
-                                        <li><a href="treeguard.html"></a>Tree Guard</li>
-                                        <li><a href="wire.html"></a>Barbed Wire</li>
-                                        <li><a href="bucket.html"></a>Kick Bucket</li>
+                                        
+                                        <li><a href="stool.html">Stools and Chairs</a></li>
+                                        <li><a href="wire.html">Barbed Wire / Tree Guard</a></li>
+                                        <li><a href="bucket.html">Bucket/Cabinet</a></li>
+                                        <li><a href="wheelchair.html">Wheel Chair</a></li>
                                     </ul> 
                                 </div>
                             </div>
@@ -965,8 +966,8 @@
                                     <div class="single-footer-info mt-20">
                                         <span>Phone :</span>
                                         <div class="footer-info-content">
-                                            <p>+88123 4567 890</p>
-                                            <p>+88123 4567 890</p>
+                                            <p>+91 99972-68800</p>
+                                            <p>+91 98938-97228</p>
                                         </div>
                                     </div> <!-- single footer info -->
                                 </li>
@@ -974,8 +975,8 @@
                                     <div class="single-footer-info mt-20">
                                         <span>Email :</span>
                                         <div class="footer-info-content">
-                                            <p>contact@yourmail.com</p>
-                                            <p>support@yourmail.com</p>
+                                            <p>contact@shiri.in</p>
+                                            <p>support@shiri.in</p>
                                         </div>
                                     </div> <!-- single footer info -->
                                 </li>
@@ -983,7 +984,7 @@
                                     <div class="single-footer-info mt-20">
                                         <span>Address :</span>
                                         <div class="footer-info-content">
-                                            <p>5078 Jensen Key, Port Kaya, WV 73505</p>
+                                            <p>19 B, Industrial Estate, Birla Nagar, Gwalior, Madhya Pradesh 474004, India.</p>
                                         </div>
                                     </div> <!-- single footer info -->
                                 </li>
@@ -993,7 +994,7 @@
                     <div class="col-lg-2 col-md-3 col-sm-5">
                         <div class="footer-link mt-50">
                             <h5 class="f-title">Location</h5>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d7694.240371717791!2d78.18447657983413!3d26.224694476003602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d26.2052901!2d78.2059385!4m5!1s0x3976c719dc774a15%3A0x42b157a7a871a643!2sshiri%20enterprises!3m2!1d26.2246699!2d78.18746519999999!5e0!3m2!1sen!2sin!4v1631529617597!5m2!1sen!2sin" width="200" height="180" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d28633.112422737348!2d78.187462!3d26.224671!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x42b157a7a871a643!2sSHIRI%20ENTERPRISES!5e0!3m2!1sen!2sin!4v1633292708919!5m2!1sen!2sin" width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                         </div> <!-- footer link -->
                     </div>
                     
@@ -1021,7 +1022,19 @@
     
     
     
-    
+    <script>
+        
+        let button=document.querySelector("body a");
+        button.addEventListener("click",()=>{
+            const span = document.querySelector("a span");
+            span.style.visibility="visible";
+            setTimeout(()=>{
+                span.style.visibility="hidden";
+                button.style.transition=".3s ease-in-out";
+
+            },3000);
+        })
+    </script>
     
     
     
